@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="采购商注册">
+	<test name="buyerRegister">
+		<classes>
+			<class name="com.essa.testSuite.TestGenrateCode">
+				<methods>
+					<include name="genrateCode"/>
+				</methods>
+			</class>		
+			<class name="com.buyer.testSuite.TestRegister">
+				<methods>
+					<include name="register"/>
+				</methods>
+			</class>		
+		</classes>
+	</test>
+</suite>
+

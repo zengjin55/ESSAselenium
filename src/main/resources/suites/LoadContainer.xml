@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="装柜">
+	<test name="generatePO">
+		<classes>
+			<class name="com.buyer.testSuite.TestAddToCart">
+				<methods>
+					<include name="addSku"/>
+				</methods>
+			</class>
+			<class name="com.essa.testSuite.TestProductInquiry">
+				<methods>
+					<include name="productInquiry"/>
+				</methods>
+			</class>	
+			<class name="com.buyer.testSuite.TestSendPO">
+				<methods>
+					<include name="conslidation"/>
+					<include name="sendPO"/>
+				</methods>
+			</class>
+			<class name="com.essa.testSuite.TestPOInquiry">
+				<methods>
+					<include name="POInquiry"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="loadContainer">
+		<classes>
+			<class name="com.essa.testSuite.TestLoadContainer">
+				<methods>
+					<include name="Billing"/><!--制单发单-->
+					<include name="toTail"/><!--转在途尾货-->
+					<include name="NoticeReceiveAndLoad"/><!--通知收货、装柜-->
+					<include name="noticReceive"/><!--设置收货、装柜的仓库地址-->
+					<include name="dealWithDelivery"/><!--收货任务处理-->
+					<include name="confirmLogisticsTest"/><!--船务-->
+					<include name="ConfirmCabinet"/><!--装柜完成-->
+				</methods>
+			</class>
+<!--			<class name="com.essa.testSuite.TestConfirLogistics">
+				<methods>
+					<include name="confirmLogisticsTest"/>
+				</methods>
+			</class>-->
+		</classes>
+	</test>
+</suite>
+

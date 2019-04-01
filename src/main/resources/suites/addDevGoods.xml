@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="新增开发商品">
+	<test name="addDevGoods">
+		<classes>
+			<class name="com.essa.testSuite.TestAddDevGood">
+				<methods>
+					<include name="addDevGood" />
+					<include name="publicDevGood" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

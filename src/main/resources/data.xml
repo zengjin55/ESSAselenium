@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test>
+	<data>
+		<!-- <buyerAccount>buyer11159@essa.cn</buyerAccount> -->
+		<buyerAccount>meng18@essa.cn</buyerAccount>
+		<supplier>DDP测试公司</supplier>
+		<buyerNo>COK09161</buyerNo>
+	</data>
+</test>

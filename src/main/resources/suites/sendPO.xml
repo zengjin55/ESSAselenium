@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="提交PO">
+	<test name="sendPO">
+		<classes>
+			<class name="com.buyer.testSuite.TestAddToCart">
+				<methods>
+					<include name="addSku"/>
+				</methods>
+			</class>
+			<class name="com.essa.testSuite.TestProductInquiry">
+				<methods>
+					<include name="productInquiry"/>
+				</methods>
+			</class>	
+			<class name="com.buyer.testSuite.TestSendPO">
+				<methods>
+					<include name="conslidation"/>
+					<include name="sendPO"/>
+				</methods>
+			</class>	
+		</classes>
+	</test>
+	<test name="PoInquiry">
+		<classes>
+			<class name="com.essa.testSuite.TestPOInquiry">
+				<methods>
+					<include name="POInquiry"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+

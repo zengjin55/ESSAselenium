@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="发布团购商品">
+	<test name="publishGroupPurchase">
+		<classes>
+			<class name="com.essa.testSuite.TestAddOriginalGoods">
+				<methods>
+					<include name="toAddOriginalGoodsPage"/>
+					<include name="updatePic"/>
+					<include name="auditOriginal"/>
+					<include name="getSkuNo"/>
+				</methods>
+			</class>	
+			<class name="com.essa.testSuite.TestGroupPurchase">
+				<methods>
+					<include name="SkuCategoryManagerCongfig"/>
+					<include name="publishGroupPurchase"/>
+					<include name="isPublish"/>
+				</methods>
+			</class>	
+		</classes>
+	</test>
+</suite>
+

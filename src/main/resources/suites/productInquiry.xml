@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="成品询价">
+	<test name="productInquiry">
+		<classes>
+			<class name="com.buyer.testSuite.TestAddToCart">
+				<methods>
+					<include name="keywordToCart"/>
+				</methods>
+			</class>	
+			<class name="com.essa.testSuite.TestProductInquiry">
+				<methods>
+					<include name="productInquiry"/>
+				</methods>
+			</class>	
+		</classes>
+	</test>
+</suite>
+

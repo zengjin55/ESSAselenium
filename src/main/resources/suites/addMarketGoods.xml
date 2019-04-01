@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="新增市场商品">
+	<test name="addMarketGoods">
+		<classes>
+			<class name="com.essa.testSuite.TestAddMarketGoods">
+				<methods>
+					<include name="toMarketGoodsRelesePage"/>
+					<include name="addMarketGoods"/>
+					<include name="auditMarketGoods"/>
+				</methods>
+			</class>		
+		</classes>
+	</test>
+</suite>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="活动商品生成PO">
+	<test name="addActivity">
+		<classes>
+			<class name="com.buyer.testSuite.TestAddToCart">
+				<!-- 将活动商品加入购物车 -->
+				<methods>
+					<include name="addSku" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="planApply">
+		<classes>
+		<!-- 活动达成，类目经理送询价 -->
+			<class name="com.essa.testSuite.TestActivity">
+				<methods>
+					<include name="TestActivityToPO" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="confirmBuy">
+	<!-- 采购商确认采购 -->
+		<classes>
+		<class name="com.buyer.testSuite.TestConfirmBuy">
+				<methods>
+					<include name="confirmBuy" />
+				</methods>
+			</class>
+		</classes>
+	</test>		
+	<test name="ActivityInquiry">
+		<classes>
+		<!-- bpms成品询价，类目经理修订采购计划，财务审核计划 -->
+			<class name="com.essa.testSuite.TestActivity">
+				<methods>
+					<include name="productInquiry" />
+					<include name="planeModify" />
+					<include name="TestAuditApply" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ActivityToPO">
+			<classes>
+		<!-- 采购商平台将该活动商品拼柜，生成po单 -->
+			<class name="com.buyer.testSuite.TestSendPO">
+				<methods>
+					<include name="conslidation" />
+					<include name="sendPO" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
